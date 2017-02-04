@@ -1,4 +1,6 @@
-/* My Styles  and Change */
+/* My Styles  and Changes */
+
+
 
 .myNavHeader {
   color: #ffffff;
@@ -22,7 +24,12 @@ body {
    margin-bottom: 60px;
 }
 
+nav.navbar {
+  border-bottom: 5px solid #cccccc;
+}
+
 #main_wrapper {
+  padding-top: 100px;
 
 }
 
@@ -96,5 +103,15 @@ footer .footer_below {
   }
   .nav-justified > li > a {
     margin-bottom: 0;
+  }
+}
+
+/*Change navbar-fixed to be satic on smallest viewport and remove padding in main_wrapper*/
+@media (max-width: 768px) {
+  .navbar-fixed-top {
+    position: static;
+  }
+  #main_wrapper {
+    padding-top: 0;
   }
 }
